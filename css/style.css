@@ -1,0 +1,451 @@
+/* =========================================
+   TECHSPACE - TECNOLOGIA E INOVAÇÃO
+   Bootstrap 5 + CSS personalizado
+========================================= */
+
+
+/* CORES DO PROJETO */
+
+:root {
+    --bg: #0b1020;
+    --surface: #111a2d;
+    --text: #f4f7ff;
+    --muted: #aab6ca;
+    --accent: #6ee7d8;
+    --accent-strong: #37cdbb;
+}
+
+
+/* CONFIGURAÇÕES GERAIS */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 82px;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* MENU DE NAVEGAÇÃO */
+
+.navbar {
+    background: rgba(8, 13, 27, 0.94);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+    letter-spacing: -0.4px;
+}
+
+.brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #07131c;
+}
+
+.nav-link {
+    color: #c5cede !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+
+/* APRESENTAÇÃO PRINCIPAL */
+
+.hero-section {
+    min-height: 690px;
+    display: flex;
+    align-items: center;
+    padding: 140px 0 90px;
+
+    background:
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(55, 205, 187, 0.13),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1020 0%,
+            #101b30 100%
+        );
+}
+
+.eyebrow,
+.section-tag {
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-section h1 {
+    max-width: 720px;
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.hero-section h1 span {
+    color: var(--accent);
+}
+
+.hero-text {
+    max-width: 590px;
+    color: var(--muted);
+    font-size: 1.12rem;
+    line-height: 1.8;
+}
+
+
+/* BOTÕES */
+
+.btn {
+    font-weight: 700;
+    border-radius: 9px;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* IMAGEM PRINCIPAL */
+
+.hero-image-wrap {
+    position: relative;
+    max-width: 490px;
+    margin-left: auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.38);
+}
+
+
+/* CAIXA SOBRE A IMAGEM */
+
+.floating-note {
+    position: absolute;
+    left: -28px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 19px;
+    color: var(--text);
+    background: #18263a;
+
+    border: 1px solid rgba(110, 231, 216, 0.35);
+    border-radius: 13px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.note-icon {
+    color: var(--accent);
+    font-size: 1.8rem;
+}
+
+.floating-note strong,
+.floating-note small {
+    display: block;
+}
+
+.floating-note small {
+    color: var(--muted);
+    margin-top: 3px;
+}
+
+
+/* ALERTA */
+
+.alert-area {
+    padding-top: 35px;
+}
+
+.alert {
+    border-radius: 12px;
+    margin-bottom: 0;
+}
+
+
+/* SEÇÕES */
+
+.section-space {
+    padding: 95px 0;
+}
+
+.about-section {
+    background: #0e1729;
+}
+
+.section-title {
+    color: var(--text);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.section-description {
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 1.04rem;
+    line-height: 1.85;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+/* CARDS */
+
+.tech-card {
+    overflow: hidden;
+    color: var(--text);
+    background: var(--surface);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(110, 231, 216, 0.5);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.tech-card .card-img-top {
+    height: 215px;
+    object-fit: cover;
+}
+
+.tech-card .card-body {
+    padding: 25px;
+}
+
+.tech-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.tech-card .card-text {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.card-badge {
+    width: fit-content;
+    padding: 7px 12px;
+    font-size: 0.75rem;
+}
+
+
+/* SEÇÃO DE APRENDIZADO */
+
+.learning-section {
+    background: var(--bg);
+}
+
+
+/* ACCORDION */
+
+.tech-accordion {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-accordion .accordion-item {
+    margin-bottom: 12px;
+    overflow: hidden;
+
+    color: var(--text);
+    background: var(--surface);
+
+    border: 1px solid rgba(110, 231, 216, 0.18);
+    border-radius: 12px;
+}
+
+.tech-accordion .accordion-button {
+    padding: 20px;
+
+    color: var(--text);
+    background: var(--surface);
+
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.tech-accordion .accordion-button:not(.collapsed) {
+    color: var(--accent);
+    background: #17263a;
+}
+
+.tech-accordion .accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.tech-accordion .accordion-body {
+    padding: 20px;
+
+    color: var(--muted);
+    background: #131e32;
+
+    line-height: 1.8;
+}
+
+
+/* MODAL */
+
+.modal-content {
+    color: var(--text);
+    background: var(--surface);
+
+    border: 1px solid rgba(110, 231, 216, 0.25);
+    border-radius: 15px;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.modal-body {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+
+/* SEÇÃO FINAL */
+
+.contact-section {
+    padding-top: 35px;
+    background: #0e1729;
+}
+
+.contact-box {
+    padding: 65px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #17263a,
+        #111a2d
+    );
+
+    border: 1px solid rgba(110, 231, 216, 0.18);
+    border-radius: 22px;
+}
+
+.contact-box .section-description {
+    max-width: 600px;
+}
+
+
+/* RODAPÉ */
+
+.site-footer {
+    padding: 25px 0;
+    color: #91a0b8;
+    background: #080d19;
+    font-size: 0.9rem;
+}
+
+.site-footer strong {
+    color: var(--accent);
+}
+
+
+/* RESPONSIVIDADE PARA TABLETS */
+
+@media (max-width: 991.98px) {
+
+    .hero-section {
+        min-height: auto;
+        padding-top: 125px;
+    }
+
+    .hero-image-wrap {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 575.98px) {
+
+    .hero-section {
+        padding: 115px 0 65px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.55rem;
+        letter-spacing: -1.2px;
+    }
+
+    .hero-image {
+        height: 270px;
+    }
+
+    .floating-note {
+        left: 10px;
+        bottom: 12px;
+        padding: 11px 13px;
+    }
+
+    .section-space {
+        padding: 68px 0;
+    }
+
+    .tech-card .card-img-top {
+        height: 190px;
+    }
+
+    .contact-box {
+        padding: 48px 18px;
+    }
+
+    .alert-area {
+        padding-top: 20px;
+    }
+
+}

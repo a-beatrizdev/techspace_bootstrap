@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechSpace | Tecnologia e Inovação</title>
+
+    <!-- CSS do Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <span class="brand-mark">T</span> TechSpace
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#areas">Áreas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aprendizado">Aprendizado</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- APRESENTAÇÃO PRINCIPAL -->
+    <header id="inicio" class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-5">
+
+                <div class="col-lg-7">
+
+                    <span class="eyebrow">
+                        IDEIAS • CRIATIVIDADE • FUTURO
+                    </span>
+
+                    <h1 class="display-3 fw-bold mt-3">
+                        A tecnologia transforma o
+                        <span>amanhã.</span>
+                    </h1>
+
+                    <p class="hero-text mt-4">
+                        Um espaço para explorar o universo da tecnologia,
+                        descobrir novas possibilidades e entender como
+                        a inovação faz parte do nosso dia a dia.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+
+                        <a href="#areas" class="btn btn-primary btn-lg">
+                            Explorar áreas
+                        </a>
+
+                        <a href="#sobre" class="btn btn-success btn-lg">
+                            Conheça o projeto
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="hero-image-wrap">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+                            alt="Componentes tecnológicos"
+                            class="img-fluid hero-image">
+
+                        <div class="floating-note">
+
+                            <span class="note-icon">✦</span>
+
+                            <div>
+                                <strong>O futuro começa</strong>
+                                <small>com uma boa ideia.</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ALERT DO BOOTSTRAP -->
+    <section class="container alert-area">
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+
+            <strong>Bem-vindo ao TechSpace!</strong>
+            Descubra como a tecnologia está transformando o mundo.
+
+            <button type="button" class="btn-close"
+                data-bs-dismiss="alert" aria-label="Fechar">
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="about-section section-space">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-4">
+
+                <div class="col-lg-5">
+
+                    <span class="section-tag">
+                        SOBRE O TECHSPACE
+                    </span>
+
+                    <h2 class="section-title mt-3">
+                        Conhecimento que conecta pessoas e ideias.
+                    </h2>
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <p class="section-description">
+                        A tecnologia está presente em praticamente tudo:
+                        na comunicação, na educação, na saúde e no trabalho.
+                        O TechSpace apresenta algumas das áreas que ajudam
+                        a construir soluções e tornar tarefas mais simples.
+                    </p>
+
+                    <p class="section-description">
+                        Nosso objetivo é despertar a curiosidade,
+                        incentivar o aprendizado e mostrar que qualquer
+                        pessoa pode começar a explorar esse universo.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ÁREAS DA TECNOLOGIA -->
+    <section id="areas" class="areas-section section-space">
+
+        <div class="container">
+
+            <div class="text-center section-heading">
+
+                <span class="section-tag">
+                    EXPLORE POSSIBILIDADES
+                </span>
+
+                <h2 class="section-title mt-3">
+                    Áreas da tecnologia
+                </h2>
+
+                <p class="section-description mx-auto">
+                    Conheça três áreas que estão criando novas
+                    experiências e soluções.
+                </p>
+
+            </div>
+
+
+            <!-- GRID DOS CARDS -->
+            <div class="row g-4 mt-3">
+
+
+                <!-- CARD 1 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card tech-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=85"
+                            class="card-img-top"
+                            alt="Programação em computador">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="badge text-bg-primary card-badge">
+                                Desenvolvimento
+                            </span>
+
+                            <h3 class="card-title mt-3">
+                                Programação
+                            </h3>
+
+                            <p class="card-text">
+                                Transforme ideias em sites, aplicativos
+                                e sistemas por meio de linguagens
+                                de programação.
+                            </p>
+
+                            <a href="#aprendizado"
+                                class="btn btn-outline-info mt-auto align-self-start">
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card tech-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85"
+                            class="card-img-top"
+                            alt="Inteligência artificial">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="badge text-bg-success card-badge">
+                                Inovação
+                            </span>
+
+                            <h3 class="card-title mt-3">
+                                Inteligência Artificial
+                            </h3>
+
+                            <p class="card-text">
+                                Conheça sistemas capazes de identificar
+                                padrões, aprender com dados e apoiar
+                                diferentes atividades.
+                            </p>
+
+                            <a href="#aprendizado"
+                                class="btn btn-outline-info mt-auto align-self-start">
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card tech-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
+                            class="card-img-top"
+                            alt="Eletrônica e dispositivos conectados">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="badge text-bg-warning card-badge">
+                                Conectividade
+                            </span>
+
+                            <h3 class="card-title mt-3">
+                                Tecnologia e IoT
+                            </h3>
+
+                            <p class="card-text">
+                                Descubra como dispositivos conectados
+                                podem trocar informações e automatizar
+                                tarefas do cotidiano.
+                            </p>
+
+                            <a href="#aprendizado"
+                                class="btn btn-outline-info mt-auto align-self-start">
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEÇÃO DE APRENDIZADO COM ACCORDION -->
+    <section id="aprendizado" class="learning-section section-space">
+
+        <div class="container">
+
+            <div class="text-center section-heading">
+
+                <span class="section-tag">
+                    APRENDA MAIS
+                </span>
+
+                <h2 class="section-title mt-3">
+                    Explore o conhecimento
+                </h2>
+
+                <p class="section-description mx-auto">
+                    Abra os menus abaixo para conhecer um pouco mais
+                    sobre cada área da tecnologia.
+                </p>
+
+            </div>
+
+
+            <!-- ACCORDION DO BOOTSTRAP -->
+            <div class="accordion tech-accordion mt-5" id="accordionTecnologia">
+
+
+                <!-- ITEM 1 -->
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#programacao"
+                            aria-expanded="true"
+                            aria-controls="programacao">
+
+                            O que é programação?
+
+                        </button>
+
+                    </h3>
+
+                    <div id="programacao"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionTecnologia">
+
+                        <div class="accordion-body">
+
+                            Programação é o processo de criar instruções
+                            para que computadores executem determinadas
+                            tarefas. Ela permite desenvolver sites,
+                            aplicativos, jogos e sistemas.
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- ITEM 2 -->
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#inteligencia"
+                            aria-expanded="false"
+                            aria-controls="inteligencia">
+
+                            O que é Inteligência Artificial?
+
+                        </button>
+
+                    </h3>
+
+                    <div id="inteligencia"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionTecnologia">
+
+                        <div class="accordion-body">
+
+                            A Inteligência Artificial permite que sistemas
+                            computacionais realizem tarefas que envolvem
+                            reconhecimento de padrões, análise de dados
+                            e geração de respostas.
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- ITEM 3 -->
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#iot"
+                            aria-expanded="false"
+                            aria-controls="iot">
+
+                            O que é Internet das Coisas?
+
+                        </button>
+
+                    </h3>
+
+                    <div id="iot"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionTecnologia">
+
+                        <div class="accordion-body">
+
+                            A Internet das Coisas, também conhecida como IoT,
+                            conecta objetos físicos à internet, permitindo
+                            a troca de informações entre dispositivos.
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- MODAL DO BOOTSTRAP -->
+    <section class="contact-section section-space" id="contato">
+
+        <div class="container">
+
+            <div class="contact-box text-center">
+
+                <span class="section-tag">
+                    SEU PRÓXIMO PASSO
+                </span>
+
+                <h2 class="section-title mt-3">
+                    Continue descobrindo.
+                </h2>
+
+                <p class="section-description mx-auto">
+                    A curiosidade é o primeiro passo para criar algo novo.
+                    Explore, aprenda e compartilhe ideias.
+                </p>
+
+                <!-- BOTÃO QUE ABRE O MODAL -->
+                <button type="button"
+                    class="btn btn-primary btn-lg mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProjeto">
+
+                    Conheça o projeto
+
+                </button>
+
+                <a href="#inicio" class="btn btn-success btn-lg mt-3">
+                    Voltar ao início ↑
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA MODAL -->
+    <div class="modal fade" id="modalProjeto"
+        tabindex="-1"
+        aria-labelledby="tituloModal"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="tituloModal">
+                        Sobre o TechSpace
+                    </h5>
+
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Fechar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    O TechSpace é uma página de apresentação sobre
+                    tecnologia e inovação, desenvolvida utilizando
+                    HTML, CSS, JavaScript e Bootstrap 5.
+
+                    <br><br>
+
+                    Seu objetivo é apresentar diferentes áreas
+                    tecnológicas de forma simples e visual.
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal">
+
+                        Entendi
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+
+        <div class="container d-flex flex-column flex-md-row
+            justify-content-between align-items-center gap-2">
+
+            <span>
+                <strong>TechSpace</strong> — Tecnologia e Inovação
+            </span>
+
+            <span>
+                Atividade desenvolvida com Bootstrap 5.
+                © <span id="anoAtual"></span>
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT DO BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JAVASCRIPT PERSONALIZADO -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
